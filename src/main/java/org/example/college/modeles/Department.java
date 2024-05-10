@@ -1,4 +1,4 @@
-package modeles;
+package org.example.college.modeles;
 
 import connexion.DAO;
 
@@ -82,7 +82,7 @@ public class Department extends DAO {
             System.out.println("ID: " + id + ", Name: " + name + ", Location: " + location);
         }
     }
-    //create table modeles.Department
+    //create table org.example.college.modeles.Department
     public void createTableDepartment() throws SQLException {
         try (Connection connection = connect_db()) {
             String sql = "CREATE TABLE IF NOT EXISTS Department (" +

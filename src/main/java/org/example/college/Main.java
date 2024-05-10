@@ -1,12 +1,8 @@
 package org.example.college;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import modeles.Course;
-import modeles.Department;
-import modeles.Teacher;
-
-import java.io.IOException;
+import org.example.college.modeles.Course;
+import org.example.college.modeles.Department;
+import org.example.college.modeles.Teacher;
 
 public class Main{
 public static void main(String[] args)throws Exception{

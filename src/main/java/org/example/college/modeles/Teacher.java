@@ -1,7 +1,6 @@
-package modeles;
+package org.example.college.modeles;
 
 import connexion.DAO;
-import modeles.Department;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -126,14 +125,14 @@ public class Teacher extends DAO {
 
 
     /*
-    public ObservableList<modeles.Teacher> getAllTeachers() throws SQLException {
+    public ObservableList<org.example.college.modeles.Teacher> getAllTeachers() throws SQLException {
         String sql = "SELECT * FROM TEACHER";
         ResultSet rs = connect_db().createStatement().executeQuery(sql);
-        ObservableList<modeles.Teacher> teachers = FXCollections.observableArrayList();
+        ObservableList<org.example.college.modeles.Teacher> teachers = FXCollections.observableArrayList();
         while (rs.next()) {
-            teachers.add(new modeles.Teacher(
+            teachers.add(new org.example.college.modeles.Teacher(
                     rs.getString("name"),
-                    new modeles.Department(rs.getString("department")),
+                    new org.example.college.modeles.Department(rs.getString("department")),
                     ((ResultSet) rs).getString("email"),
                     rs.getInt("numberPhone")
             ));

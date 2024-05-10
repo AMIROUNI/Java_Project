@@ -1,4 +1,4 @@
-package modeles;
+package org.example.college.modeles;
 
 public abstract class SchoolDepartment {
     private String name;

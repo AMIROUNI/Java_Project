@@ -1,4 +1,4 @@
-package modeles;
+package org.example.college.modeles;
 
 import connexion.DAO;
 
@@ -23,7 +23,7 @@ public class Student extends DAO {
     private static final String SCHOOL_NAME = "XYZ School";
     private Course enrolledCourse; // Relationship: Composition
 
-   /* public modeles.Student(String name) {
+   /* public org.example.college.modeles.Student(String name) {
         this.name = name;
         this.id = nextId++;
     }*/
@@ -140,12 +140,12 @@ public class Student extends DAO {
 
 
 /*
-    public <ObservableList> ObservableList<modeles.Student> getAllStudents() throws SQLException {
+    public <ObservableList> ObservableList<org.example.college.modeles.Student> getAllStudents() throws SQLException {
         String sql = "SELECT * FROM STUDENT";
         ResultSet rs = connect_db().createStatement().executeQuery(sql);
-        ObservableList<modeles.Student> students = FXCollections.observableArrayList();
+        ObservableList<org.example.college.modeles.Student> students = FXCollections.observableArrayList();
         while (rs.next()) {
-            students.add(new modeles.Student(
+            students.add(new org.example.college.modeles.Student(
                     rs.getString("name"),
                     rs.getString("prename"),
                     rs.getInt("age"),
