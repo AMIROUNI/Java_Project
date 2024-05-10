@@ -1,6 +1,6 @@
 package org.example.college.modeles;
 
-import connexion.DAO;
+import org.example.college.connexion.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
